@@ -25,6 +25,7 @@ public class BoardTest {
         assertTrue(board.withinBorders(0, 0));
         assertFalse(board.withinBorders(1, 1));
     }
+
     @Test
     void testBoardWithNullSquare() {
         Square[][] grid = new Square[1][1];
@@ -34,6 +35,7 @@ public class BoardTest {
             Board board = new Board(grid);
         });
     }
+
     @Test
     void testBoardWithNullSquareSquareAt() {
         Square[][] grid = new Square[1][1];
