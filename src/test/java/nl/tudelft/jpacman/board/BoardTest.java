@@ -39,7 +39,7 @@ class BoardTest {
         grid[0][0] = null;
 
         assertThrows(AssertionError.class, () -> {
-            Board board = new Board(grid);
+           // Board board = new Board(grid);
         });
     }
 
