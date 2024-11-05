@@ -9,7 +9,11 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-
+/**
+ * Unit tests for the Board class, which represents the game board in JPacman.
+ * These tests ensure that the Board class behaves as expected, including
+ * validation of grid dimensions and handling of null squares.
+ */
 public class BoardTest {
 
     /**
