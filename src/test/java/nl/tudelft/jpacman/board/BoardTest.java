@@ -1,24 +1,19 @@
 package nl.tudelft.jpacman.board;
 
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
-
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 /**
- * Unit tests for the Board class, which represents the game board in JPacman.
- * These tests ensure that the Board class behaves as expected, including
- * validation of grid dimensions and handling of null squares.
+ * Unit tests for the {@link Board} class.
  */
-public class BoardTest {
+class BoardTest {
 
     /**
-     * Tests that a valid Board instance is correctly initialized
-     * with proper width, height, and non-null squares.
+     * Tests creating a valid board and checks its properties.
      */
     @Test
     void testValidBoard() {
@@ -35,7 +30,8 @@ public class BoardTest {
     }
 
     /**
-     * Tests that creating a Board with a null square throws an AssertionError.
+     * Tests creating a board with a null square.
+     * Expects an AssertionError to be thrown.
      */
     @Test
     void testBoardWithNullSquare() {
@@ -48,7 +44,8 @@ public class BoardTest {
     }
 
     /**
-     * Tests that accessing a null square on a Board throws an AssertionError.
+     * Tests accessing a square on a board with a null square.
+     * Expects an AssertionError to be thrown.
      */
     @Test
     void testBoardWithNullSquareSquareAt() {
