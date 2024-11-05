@@ -12,6 +12,10 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class BoardTest {
 
+    /**
+     * Tests that a valid Board instance is correctly initialized
+     * with proper width, height, and non-null squares.
+     */
     @Test
     void testValidBoard() {
         Square[][] grid = new Square[1][1];
@@ -26,6 +30,9 @@ public class BoardTest {
         assertFalse(board.withinBorders(1, 1));
     }
 
+    /**
+     * Tests that creating a Board with a null square throws an AssertionError.
+     */
     @Test
     void testBoardWithNullSquare() {
         Square[][] grid = new Square[1][1];
@@ -36,6 +43,9 @@ public class BoardTest {
         });
     }
 
+    /**
+     * Tests that accessing a null square on a Board throws an AssertionError.
+     */
     @Test
     void testBoardWithNullSquareSquareAt() {
         Square[][] grid = new Square[1][1];
