@@ -1,9 +1,8 @@
 # JPacman
 
-![Build Status](https://github.com/<your GitHub account name>/jpacman/actions/workflows/myworkflow.yml/badge.svg) 
+![Build Status](https://github.com/mindnapatt/jpacman/actions/workflows/myworkflow.yml/badge.svg) 
 ![Coverage](.github/badges/jacoco.svg)
 ![Branches](.github/badges/branches.svg)
-
 
 ## About
 
