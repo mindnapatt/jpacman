@@ -41,7 +41,8 @@ public class MapParserTest {
         mapParser = new MapParser(levelFactory, boardFactory);
     }
 
-    /** * Test for the parseMap method (good map).
+    /**
+     * * Test for the parseMap method (good map).
      * */
     @Test
     public void testParseMapGood() {
@@ -60,7 +61,6 @@ public class MapParserTest {
         // Verify that createGhost() is called exactly once
         Mockito.verify(levelFactory, Mockito.times(1)).createGhost();
     }
-
     /**
      * Test for the parseMap method (bad map)
      */
