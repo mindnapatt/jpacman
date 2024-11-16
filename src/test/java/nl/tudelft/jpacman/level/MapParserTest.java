@@ -35,15 +35,15 @@ public class MapParserTest {
 
     /**
      * Sets up the test environment before each test.
-     **/
+     */
     @BeforeEach
     public void setUp() {
         mapParser = new MapParser(levelFactory, boardFactory);
     }
 
     /**
-     * * Test for the parseMap method (good map).
-     * */
+     * Test for the parseMap method (good map).
+     */
     @Test
     public void testParseMapGood() {
         assertNotNull(boardFactory);
@@ -61,8 +61,9 @@ public class MapParserTest {
         // Verify that createGhost() is called exactly once
         Mockito.verify(levelFactory, Mockito.times(1)).createGhost();
     }
+
     /**
-     * Test for the parseMap method (bad map)
+     * Test for the parseMap method (bad map).
      */
     @Test
     public void testParseMapWrong1() {
